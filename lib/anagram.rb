@@ -6,14 +6,20 @@ class Anagram
   end
 
   def match(array)
-    matches = []
-    split_word = @word.split("").sort
-
-    array.each do |word|
-      matches << word if word.split("").sort == split_word
-    end
-    matches
+    array.select {|word| word.split("").sort == @word.split("").sort}
   end
+
+  # def match(array)
+    # original try
+    # matches = []
+    # split_word = @word.split("").sort
+    #
+    # array.each do |word|
+    #   matches << word if word.split("").sort == split_word
+    # end
+    # matches
+  # end
+
 
 # to determine anagram
   # 1. take `word` passed in to initialize, split it, sort it, store in variable
