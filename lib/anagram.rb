@@ -19,12 +19,4 @@ class Anagram
     # end
     # matches
   # end
-
-
-# to determine anagram
-  # 1. take `word` passed in to initialize, split it, sort it, store in variable
-  # 2. iterate through match array
-  #   2.a on each iteration, split word into string, sort it, use comparison operator to compare to word above
-  # 3. if words comparison is true, add that word to the matches array
-  # 4. at the end, return the matches array
 end
